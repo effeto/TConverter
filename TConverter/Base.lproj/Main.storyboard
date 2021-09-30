@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-eberhard-grossgasteiger-1624496" highlightedImage="Image" translatesAutoresizingMaskIntoConstraints="NO" id="fbK-3W-LZk">
+                                <rect key="frame" x="-543" y="-672" width="1500" height="2250"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0°С" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpG-1n-EGW">
+                                <rect key="frame" x="164" y="287" width="86" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SEx-cH-yvG">
+                                <rect key="frame" x="59" y="438" width="296" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="hjo-NT-9OG"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIA-hL-QHa">
+                                <rect key="frame" x="86" y="66" width="242" height="45"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0°F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8on-Si-8xi">
+                                <rect key="frame" x="168" y="551" width="78" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SEx-cH-yvG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3HX-dr-Vlq"/>
+                            <constraint firstItem="fbK-3W-LZk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3eD-NN-LNi"/>
+                            <constraint firstItem="jpG-1n-EGW" firstAttribute="leading" secondItem="cIA-hL-QHa" secondAttribute="trailing" constant="-164" id="BAV-KI-GJu"/>
+                            <constraint firstItem="SEx-cH-yvG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="G1h-RL-chv"/>
+                            <constraint firstItem="cIA-hL-QHa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="Ggo-Se-hRs"/>
+                            <constraint firstItem="SEx-cH-yvG" firstAttribute="top" secondItem="jpG-1n-EGW" secondAttribute="bottom" constant="91" id="Mbx-hs-b4v"/>
+                            <constraint firstItem="fbK-3W-LZk" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="WPo-li-jQF"/>
+                            <constraint firstItem="SEx-cH-yvG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="cck-EJ-PQl"/>
+                            <constraint firstItem="8on-Si-8xi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168" id="lmf-UE-A8a"/>
+                            <constraint firstItem="8on-Si-8xi" firstAttribute="top" secondItem="SEx-cH-yvG" secondAttribute="bottom" constant="83" id="opP-am-RuM"/>
+                            <constraint firstItem="jpG-1n-EGW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="so9-fW-2Or"/>
+                            <constraint firstItem="cIA-hL-QHa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="st8-5H-EFP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="jpG-1n-EGW" id="vLZ-o2-dyo"/>
+                        <outlet property="farenheitLabel" destination="8on-Si-8xi" id="b4L-lR-FHv"/>
+                        <outlet property="slider" destination="SEx-cH-yvG" id="cqj-gC-K2N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="640" height="1252"/>
+        <image name="pexels-eberhard-grossgasteiger-1624496" width="1500" height="2250"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

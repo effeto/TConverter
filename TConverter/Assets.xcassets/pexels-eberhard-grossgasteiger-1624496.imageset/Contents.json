@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "pexels-eberhard-grossgasteiger-1624498.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "pexels-eberhard-grossgasteiger-1624497.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "pexels-eberhard-grossgasteiger-1624496.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
